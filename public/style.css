@@ -1,0 +1,255 @@
+html , body{
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+}
+header{
+    display: flex;
+   
+padding: 20px 5%;
+height: 80px;
+}
+.navLinks{
+    font-size: 1.2em;
+    font-weight: 700;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+   margin: auto;
+   display: flex;
+    gap: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navLinks li {
+    position: relative;
+    padding-bottom: 5px;
+}
+.navBar{
+    position: fixed;
+    width: 100%;
+    background-color: blue;
+    padding: 1px 0 ;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    color: white;
+
+
+}
+li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+    background-color: white;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+li.active::after{
+    width: 100%;
+}
+.heroContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 140px;
+
+}
+.heroLeft img{
+    width: 210px;
+    border-radius: 50%;
+    height: 210px;
+    object-fit: cover;
+    border: solid 2px blue;
+    display: block;
+}
+.heroRight h1{
+    font-size: 2.4em;
+    font-family: "Sniglet", system-ui;
+  font-weight: 300;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+.heroRight h1 span{
+    color: blue;
+
+}
+.heroRight p{
+    font-size: 1.3em;
+  margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+.btnContainer{
+    gap: 15px;
+    display: flex;
+}
+button{
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+ font-family: "Outfit", sans-serif; 
+}
+button:hover{
+transform: scale(1.05);
+background-color: rgb(19, 19, 148);
+}
+.heroRight{
+    flex-direction: column;
+    display: flex;
+    gap: 3px;
+}
+hr{
+    width: 30%;
+    margin-top:50px ;
+    margin-bottom: 30px;
+}
+article{
+margin: 30px 40px;
+text-align: center;
+justify-content: center ;
+}
+article h3{
+    font-family: 'outfit',sans-serif;
+    font-weight: 320;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+.iconsContainer{
+gap: 10px;
+flex-direction: column;
+display: flex;
+margin-right: 90px;
+}
+.iconItem span{
+flex-wrap: nowrap;
+white-space: nowrap;
+font-size: 1.1rem;
+  font-family: "Courgette", cursive;
+}
+.iconItem i{
+    color: blue;
+    font-size: 1rem;
+}
+.grid{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(215.5px, 1fr));
+}
+.grid img{
+width: 215.5px;
+object-fit: cover;
+border-radius: 10px;
+display: block;
+}
+.iconProjectsContainer{
+justify-content: center;
+text-align: center;
+margin: 0px 5%;
+display: flex;
+gap: 10px;
+padding: 2px;
+}
+.iconProjectsContainer i{
+    color: blue;
+    font-size: 20px;
+}
+.iconProjectsContainer  span{
+    font-family: 'outfit', sans-serif;
+    font-size: 1.1rem;
+}
+.pharos{
+    width: 220px !important;
+}
+.contactContainer{
+justify-content: center;
+text-align: center;
+font-family: 'outifit',sans-serif;
+}
+.contactContainer h2 span{
+color: blue;
+text-decoration: wavy;
+}
+.contactIconContainer i {
+color: green;
+font-size: 1.3em;
+}
+.contactIconContainer {
+gap: 10px;
+padding: 5px 5%;
+display: flex;
+justify-content: center;
+}
+footer{
+    background-color: rgb(0, 0, 255);
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+    margin: 0px;
+margin-top: 20px;
+color: white;
+font-family: 'outfit' , sans-serif;
+}
+@media (max-width: 768px){
+    .heroContainer{
+        flex-direction: column;
+    }
+    .heroLeft{
+        order: 2;
+    }
+    .heroRight{
+        margin-top: 20px;
+        order: 1;
+    }
+    .heroRight h1{
+        font-size: 1.75em;
+    }
+    .heroLeft img{
+        width: 190px;
+        height: 190px;
+    }
+    hr{
+    width: 50%;
+    margin-top: 40px;
+}
+article {
+    margin: 20px 5%;
+    text-align: center;
+    align-items: center;
+}
+article h3{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    width: fit-content;
+
+}
+.iconItem{
+    text-align: center;
+    justify-content: center;
+}
+.iconItem span{
+    white-space: normal;
+    font-size: 1rem;
+}
+.grid{
+    flex-direction: column;
+    width: fit-content;
+}
+.grid{
+    margin: 0 auto;
+}
+}
