@@ -21,36 +21,23 @@ height: 80px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navLinks li {
+.navLinks li a {
     position: relative;
     padding-bottom: 5px;
+    text-decoration: none;
+    color: white;
 }
 .navBar{
     position: fixed;
     width: 100%;
     background-color: blue;
-    padding: 1px 0 ;
+    padding: 0px 0 ;
     z-index: 1000;
     top: 0;
     left: 0;
     color: white;
 
 
-}
-li::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    transition: width 0.3s ease-in-out;
-    background-color: white;
-    bottom: 0;
-    transform: translateX(-50%);
-    left: 50%;
-}
-li.active::after{
-    width: 100%;
 }
 .heroContainer{
     display: flex;
@@ -89,6 +76,7 @@ li.active::after{
     display: flex;
 }
 button{
+    text-decoration: none;
     border: none;
     background-color: blue;
     color: white;
@@ -203,6 +191,15 @@ footer{
 margin-top: 20px;
 color: white;
 font-family: 'outfit' , sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+#about {
+    scroll-margin-top: 50px; /* زودي الرقم ده حسب ارتفاع الهيدر بتاعك */
+}
+#certificates {
+    scroll-margin-top: 190px; /* زودي الرقم ده حسب ارتفاع الهيدر بتاعك */
 }
 @media (max-width: 768px){
     .heroContainer{
