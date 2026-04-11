@@ -152,7 +152,9 @@ text-align: center;
 margin: 0px 5%;
 display: flex;
 gap: 10px;
-padding: 2px;
+padding: 12px;
+box-shadow:0px 10px 30px rgba(0,0,0,0.4);
+    
 }
 .iconProjectsContainer i{
     color: blue;
@@ -199,10 +201,10 @@ html {
     scroll-behavior: smooth;
 }
 #about {
-    scroll-margin-top: 50px; /* زودي الرقم ده حسب ارتفاع الهيدر بتاعك */
+    scroll-margin-top: 50px; 
 }
 #certificates {
-    scroll-margin-top: 190px; /* زودي الرقم ده حسب ارتفاع الهيدر بتاعك */
+    scroll-margin-top: 190px; 
 }
 @media (max-width: 768px){
     .heroContainer{
