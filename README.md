@@ -1,15 +1,15 @@
-A CV website.
+# A CV website.
 
-Features:
+# Features:
 
-A photo for me.
+A picture of me.
 
-A brief information about me:my school and certificates
+A brief information about me:my school and certificates.
 
-shows 2 of my projects 
+shows 2 of my projects .
 
-Tech stack:
+# Tech stack:
 
-HTML and CSS
+HTML and CSS.
 
-IT IS RESPONSIVE FOR ALL SCREENS
+IT IS RESPONSIVE FOR ALL SCREENS📲.
